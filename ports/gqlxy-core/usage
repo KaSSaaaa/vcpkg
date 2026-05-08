@@ -1,0 +1,4 @@
+gqlxy-core provides CMake targets:
+
+    find_package(gqlxy-core CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE gqlxy_core::gqlxy_core)
