@@ -1,6 +1,6 @@
 {
   "name": "gqlxy-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An unopinionated C++ GraphQL server engine",
   "homepage": "https://github.com/KaSSaaaa/gqlxy-server",
   "license": "MIT",
@@ -23,11 +23,18 @@
   "features": {
     "tests": {
       "description": "Build tests",
-      "dependencies": ["gtest"]
+      "dependencies": [
+        "gtest"
+      ]
     },
     "standalone-server": {
       "description": "Standalone HTTP/WebSocket/SSE GraphQL server using oatpp",
-      "dependencies": ["oatpp", "oatpp-websocket", "oatpp-openssl", "boost-beast"]
+      "dependencies": [
+        "oatpp",
+        "oatpp-websocket",
+        "oatpp-openssl",
+        "boost-beast"
+      ]
     }
   }
 }
