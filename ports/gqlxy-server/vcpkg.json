@@ -1,6 +1,6 @@
 {
   "name": "gqlxy-server",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An unopinionated C++ GraphQL server engine",
   "homepage": "https://github.com/KaSSaaaa/gqlxy-server",
   "license": "MIT",

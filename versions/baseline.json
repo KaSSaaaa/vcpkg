@@ -11306,7 +11306,7 @@
     }
   },
   "gqlxy-server": {
-    "baseline": "0.1.1",
+    "baseline": "0.1.2",
     "port-version": 0
   }
 }
