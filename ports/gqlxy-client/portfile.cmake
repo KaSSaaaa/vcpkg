@@ -11,6 +11,7 @@ vcpkg_cmake_configure(
     OPTIONS
         -DBUILD_TESTING=OFF
         -DBUILD_SAMPLES=OFF
+        "-DCMAKE_CXX_FLAGS=/bigobj"
 )
 
 vcpkg_cmake_install()
