@@ -6,18 +6,11 @@ vcpkg_from_github(
     HEAD_REF main
 )
 
-if(VCPKG_TARGET_IS_WINDOWS)
-    set(BIGOBJ_FLAG "-DCMAKE_CXX_FLAGS=/bigobj")
-else()
-    set(BIGOBJ_FLAG "")
-endif()
-
 vcpkg_cmake_configure(
     SOURCE_PATH "${SOURCE_PATH}"
     OPTIONS
         -DBUILD_TESTING=OFF
         -DBUILD_SAMPLES=OFF
-        ${BIGOBJ_FLAG}
 )
 
 vcpkg_cmake_install()
