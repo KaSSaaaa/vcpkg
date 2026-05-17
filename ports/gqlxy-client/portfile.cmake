@@ -6,6 +6,10 @@ vcpkg_from_github(
     HEAD_REF main
 )
 
+if(VCPKG_TARGET_IS_WINDOWS)
+    string(APPEND VCPKG_CXX_FLAGS " /bigobj")
+endif()
+
 vcpkg_cmake_configure(
     SOURCE_PATH "${SOURCE_PATH}"
     OPTIONS
